@@ -19,7 +19,7 @@
 	src="https://maps.googleapis.com/maps/api/js?v=3.11&key=AIzaSyACowyhqChRBi1XCrVqEFDOrBGmsgvXd-Q&sensor=false"
 	type="text/javascript"></script>
 
-<script type="text/javascript" src="./resources/js/stores.json"></script>
+<script type="text/javascript" src="./resources/json/stores.json"></script>
 
 <style>
 
@@ -62,11 +62,11 @@ function getLatLongFromZip(){
 
                            var lng = data.results[0].geometry.location.lng;
 
-                           var url = "http://localhost:9090/store-locator-ui/showAddress?lat="+ lat + "&lng=" + lng + "&radius=" + radius ;
+                           var url = "showAddress?lat="+ lat + "&lng=" + lng + "&radius=" + radius ;
 
                            $.ajax({
 
-                                  type : "POST",
+                                  type : "GET",
 
                                   url : url,
 

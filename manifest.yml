@@ -1,0 +1,5 @@
+---
+applications:
+- name: store-locator
+  path: target\store-locator-ui-0.0.1-SNAPSHOT.war
+  memory: 1G
